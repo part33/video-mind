@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Oxanium:wght@400;600;700;800&display=swap');
+
+:root {
+  --font-display: 'Oxanium', sans-serif;
+  --font-body: 'Noto Sans SC', sans-serif;
+  --bg-root: #090b10;
+  --bg-panel: #12151b;
+  --bg-panel-soft: rgba(18, 21, 27, 0.82);
+  --bg-card: rgba(22, 25, 31, 0.94);
+  --line: rgba(120, 133, 150, 0.24);
+  --line-strong: rgba(201, 168, 255, 0.55);
+  --text-strong: #f3f4f6;
+  --text-soft: rgba(243, 244, 246, 0.68);
+  --text-faint: rgba(243, 244, 246, 0.38);
+  --lime: #c9a8ff;
+  --lime-soft: rgba(201, 168, 255, 0.16);
+  --purple: #8d35ff;
+  --purple-soft: rgba(141, 53, 255, 0.18);
+  --danger: #ff7d6b;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+  --radius-xl: 30px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text-strong);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(circle at 50% 20%, rgba(171, 134, 255, 0.1), transparent 24%),
+    linear-gradient(180deg, #0a0c11 0%, #06070a 100%);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.2;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+#app {
+  min-height: 100vh;
+}

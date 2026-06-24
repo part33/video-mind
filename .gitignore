@@ -1,0 +1,12 @@
+.idea/
+*.iml
+
+client/node_modules/
+client/dist/
+.tools/
+
+server/data/
+server/demo-storage/
+
+*.log
+*.err.log
